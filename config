@@ -172,7 +172,7 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 ######################################
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id emacs
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+q kill
@@ -511,7 +511,6 @@ exec_always feh --bg-fill ~/Pictures/wall.jpg
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# disabling mouse acceleration
 exec_always for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
 
 exec_always killall redshift
