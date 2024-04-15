@@ -23,7 +23,7 @@
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango: JetBrainsMono Nerd Font 10
+font pango: JetBrainsMono Nerd Font 12
 
 # set the mod key to the winkey:
 set $mod Mod4
@@ -320,16 +320,6 @@ set $ws10 "10"
 #workspace $ws4 output HDMI-0
 #workspace $ws5 output HDMI-0
 
-# bind program to workspace and focus to them on startup:
-assign [class="emacs"] $ws1
-assign [class="(?i)firefox"] $ws4
-assign [class="discord"] $ws3
-
-workspace $ws1 output DP-4
-workspace $ws2 output HDMI-0
-workspace $ws3 output DP-3
-workspace $ws4 output DP-0
-
 ##############
 # compositor #
 ##############
@@ -385,13 +375,6 @@ exec --no-startup-id dex --autostart --environment i3
 
 # start conky:
 #exec_always --no-startup-id conky
-
-# start a script to setup displays
-# uncomment the next line, use arandr to setup displays and save the file as monitor:
-exec --no-startup-id ~/.screenlayout/monitor.sh
-
-# set powersavings for display:
-exec --no-startup-id xset s 480 dpms 600 600 600
 
 # disable power saving (for example if using xscreensaver)
 #exec --no-startup-id xset -dpms
@@ -515,3 +498,6 @@ exec_always for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 
 
 exec_always killall redshift
 exec_always redshift -l 49.18585:-0.35912
+
+# Transparency with picom compositor
+exec_always picom -f
