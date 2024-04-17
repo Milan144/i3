@@ -322,13 +322,13 @@ set $ws10 "10"
 
 # bind program to workspace and focus to them on startup:
 assign [class="emacs"] $ws1
-assign [class="(?i)firefox"] $ws4
-assign [class="discord"] $ws3
+assign [class="(?i)firefox"] $ws3
+assign [class="discord"] $ws4
 
 workspace $ws1 output DP-4
-workspace $ws2 output HDMI-0
-workspace $ws3 output DP-3
-workspace $ws4 output DP-0
+workspace $ws2 output DP-3
+workspace $ws3 output DP-0
+workspace $ws4 output HDMI-0
 
 ##############
 # compositor #
@@ -473,8 +473,8 @@ for_window [class="urxvt"] border pixel 1
 
 # class                 border  bground text    indicator child_border
 client.focused          #ff5555 #ff5555 #ff5555 #ff5555   #ff5555
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.focused_inactive #ffffff #ffffff #ffffff #ffffff   #ffffff
+client.unfocused        #ffffff #ffffff #ffffff #ffffff   #ffffff
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
