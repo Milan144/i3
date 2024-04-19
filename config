@@ -172,7 +172,10 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 ######################################
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id emacs
+bindsym $mod+Return exec --no-startup-id alacritty
+
+# open emacs
+bindsym $mod+Shift+Return exec --no-startup-id emacs
 
 # kill focused window
 bindsym $mod+q kill
