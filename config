@@ -48,14 +48,14 @@ workspace_layout default
 ##############################
 
 #border indicator on windows:
-new_window pixel 4
+new_window pixel 1
 
 # thin borders
 # hide_edge_borders both
 
 # Set inner/outer gaps
-gaps inner 10
-gaps outer 5
+gaps inner 5
+gaps outer 1
 
 # show window title bars (not officially supported with i3gaps)
 #default_border normal
@@ -472,7 +472,7 @@ for_window [class="urxvt"] border pixel 1
 ######################################
 
 # class                 border  bground text    indicator child_border
-client.focused          #ff5555 #ff5555 #ff5555 #ff5555   #ff5555
+client.focused          #bd93f9 #bd93f9 #bd93f9 #bd93f9   #bd93f9
 client.focused_inactive #ffffff #ffffff #ffffff #ffffff   #ffffff
 client.unfocused        #ffffff #ffffff #ffffff #ffffff   #ffffff
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
