@@ -48,14 +48,14 @@ workspace_layout default
 ##############################
 
 #border indicator on windows:
-new_window pixel 4
+new_window pixel 1
 
 # thin borders
 # hide_edge_borders both
 
 # Set inner/outer gaps
-gaps inner 10
-gaps outer 5
+gaps inner 5
+gaps outer 1
 
 # show window title bars (not officially supported with i3gaps)
 #default_border normal
@@ -173,6 +173,9 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty
+
+# open emacs
+bindsym $mod+Shift+Return exec --no-startup-id emacs
 
 # kill focused window
 bindsym $mod+q kill
@@ -338,8 +341,6 @@ set $ws10 "10"
 #
 # or:
 #
-# picom: https://wiki.archlinux.org/title/Picom
-# manpage: https://man.archlinux.org/man/picom.1.en
 # The default configuration is available in /etc/xdg/picom.conf 
 # For modifications, it can be copied to ~/.config/picom/picom.conf or ~/.config/picom.conf
 # install picom package (yay -S picom)
@@ -455,9 +456,9 @@ for_window [class="urxvt"] border pixel 1
 ######################################
 
 # class                 border  bground text    indicator child_border
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.focused          #bd93f9 #bd93f9 #bd93f9 #bd93f9   #bd93f9
+client.focused_inactive #ffffff #ffffff #ffffff #ffffff   #ffffff
+client.unfocused        #ffffff #ffffff #ffffff #ffffff   #ffffff
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
