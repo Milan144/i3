@@ -48,7 +48,7 @@ workspace_layout default
 ##############################
 
 #border indicator on windows:
-new_window pixel 1
+new_window pixel 3
 
 # thin borders
 # hide_edge_borders both
@@ -475,11 +475,11 @@ for_window [class="urxvt"] border pixel 1
 ######################################
 
 # class                 border  bground text    indicator child_border
-client.focused          #bd93f9 #bd93f9 #bd93f9 #bd93f9   #bd93f9
-client.focused_inactive #ffffff #ffffff #ffffff #ffffff   #ffffff
-client.unfocused        #ffffff #ffffff #ffffff #ffffff   #ffffff
-client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+client.focused          #E44742 #E44742 #E44742 #E44742   #E44742
+client.focused_inactive #C3BCA9 #C3BCA9 #C3BCA9 #C3BCA9   #C3BCA9
+client.unfocused        #C3BCA9 #C3BCA9 #C3BCA9 #C3BCA9   #C3BCA9
+client.urgent           #E44742 #E44742 #E44742 #E44742   #E44742
+client.placeholder      #E44742 #E44742 #E44742 #E44742   #E44742
 
 client.background       #F8F8F2
 
