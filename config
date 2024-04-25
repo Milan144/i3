@@ -453,11 +453,11 @@ for_window [class="urxvt"] border pixel 1
 ######################################
 
 # class                 border  bground text    indicator child_border
-client.focused          #C3BCA9 #C3BCA9 #C3BCA9 #C3BCA9   #C3BCA9
+client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7 #cba6f7
 client.focused_inactive #14151b #14151b #14151b #14151b   #14151b
 client.unfocused        #14151b #14151b #14151b #14151b   #14151b
-client.urgent           #E44742 #E44742 #E44742 #E44742   #E44742
-client.placeholder      #E44742 #E44742 #E44742 #E44742   #E44742
+client.urgent           #cba6f7 #cba6f7 #cba6f7 #cba6f7 #cba6f7
+client.placeholder      #cba6f7 #cba6f7 #cba6f7 #cba6f7 #cba6f7
 
 client.background       #F8F8F2
 
