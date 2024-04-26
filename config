@@ -54,8 +54,8 @@ new_window pixel 3
 # hide_edge_borders both
 
 # Set inner/outer gaps
-gaps inner 5
-gaps outer 1
+gaps inner 10
+gaps outer 5
 
 # show window title bars (not officially supported with i3gaps)
 #default_border normal
@@ -387,7 +387,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # start a script to setup displays
 # uncomment the next line, use arandr to setup displays and save the file as monitor:
-exec --no-startup-id ~/.screenlayout/monitor.sh
+#exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
@@ -466,14 +466,16 @@ for_window [class="urxvt"] border pixel 1
 # set position of floating window
 #for_window [class=".*"] move position center
 
+for_window [class=".*"] border pixel 3
+
 ######################################
 # color settings for bar and windows #
 ######################################
 
 # class                 border  bground text    indicator child_border
 client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7   #cba6f7
-client.focused_inactive #C3BCA9 #C3BCA9 #C3BCA9 #C3BCA9   #C3BCA9
-client.unfocused        #C3BCA9 #C3BCA9 #C3BCA9 #C3BCA9   #C3BCA9
+client.focused_inactive #181825 #181825 #181825 #181825   #181825 
+client.unfocused        #181825 #181825 #181825 #181825   #181825
 client.urgent           #cba6f7 #cba6f7 #cba6f7 #cba6f7   #cba6f7
 client.placeholder      #cba6f7 #cba6f7 #cba6f7 #cba6f7   #cba6f7
 
