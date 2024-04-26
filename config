@@ -48,7 +48,7 @@ workspace_layout default
 ##############################
 
 #border indicator on windows:
-new_window pixel 3
+new_window pixel 2
 
 # thin borders
 # hide_edge_borders both
@@ -201,8 +201,11 @@ bindsym F1 exec --no-startup-id ~/.config/i3/scripts/keyhint-2
 #bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
 #bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
 # Backlight setting using dunst osc
-bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_up
-bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_down
+#bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_up
+#bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_down
+
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 # change focus
 bindsym $mod+j focus left
@@ -321,13 +324,13 @@ set $ws10 "10"
 
 # bind program to workspace and focus to them on startup:
 assign [class="emacs"] $ws1
-assign [class="(?i)firefox"] $ws3
+assign [class="(?i)firefox"] $ws2
 assign [class="discord"] $ws4
 
-workspace $ws1 output DP-4
-workspace $ws2 output DP-3
-workspace $ws3 output DP-0
-workspace $ws4 output HDMI-0
+#workspace $ws1 output DP-4
+#workspace $ws2 output DP-3
+#workspace $ws3 output DP-0
+#workspace $ws4 output HDMI-0
 
 ##############
 # compositor #
@@ -387,7 +390,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # start a script to setup displays
 # uncomment the next line, use arandr to setup displays and save the file as monitor:
-#exec --no-startup-id ~/.screenlayout/monitor.sh
+exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
@@ -466,7 +469,7 @@ for_window [class="urxvt"] border pixel 1
 # set position of floating window
 #for_window [class=".*"] move position center
 
-for_window [class=".*"] border pixel 3
+for_window [class=".*"] border pixel 2
 
 ######################################
 # color settings for bar and windows #
