@@ -48,7 +48,7 @@ workspace_layout default
 ##############################
 
 #border indicator on windows:
-new_window pixel 2
+new_window pixel 1
 
 # thin borders
 # hide_edge_borders both
@@ -469,7 +469,7 @@ for_window [class="urxvt"] border pixel 1
 # set position of floating window
 #for_window [class=".*"] move position center
 
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 1
 
 ######################################
 # color settings for bar and windows #
